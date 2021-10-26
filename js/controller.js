@@ -1,3 +1,4 @@
+// Magical Touch
 window.onload=function(){
     checkTurn();
     var buttons = document.getElementsByClassName("btn");
