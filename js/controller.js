@@ -1,11 +1,11 @@
 // Magical Touch
 window.onload=function(){
     checkTurn();
-    var buttons = document.getElementsByClassName("btn");
+    var buttons = document.querySelectorAll(".btn");
     for(let i=0;i<buttons.length;i++){
         buttons[i].addEventListener("click",function(event){
             turn(event);
-            //console.log(event);
+            console.log(event);
             checkForWin();
         });
     }
@@ -14,10 +14,10 @@ var count =0;
 
 function checkTurn(){
     if(count%2==0){
-        document.getElementById("turn").innerText = "X Turn";
+        document.querySelector("#turn").innerText = "X Turn";
     }
     else{
-        document.getElementById("turn").innerText = "O Turn";
+        document.querySelector("#turn").innerText = "O Turn";
     }
 }
 
