@@ -1,7 +1,7 @@
 // Magical Touch
 window.onload=function(){
     checkTurn();
-    var buttons = document.querySelector(".btn");
+    var buttons = document.querySelectorAll(".btn");
     for(let i=0;i<buttons.length;i++){
         buttons[i].addEventListener("click",function(event){
             turn(event);
