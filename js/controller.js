@@ -1,4 +1,5 @@
 // Magical Touch
+// Magical Touch 22
 window.onload=function(){
     checkTurn();
     var buttons = document.querySelectorAll(".btn");
