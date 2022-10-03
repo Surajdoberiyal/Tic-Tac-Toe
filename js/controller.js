@@ -1,4 +1,5 @@
 // Magical Touch
+// Window events
 window.onload=function(){
     checkTurn();
     var buttons = document.getElementsByClassName("btn");
@@ -10,6 +11,7 @@ window.onload=function(){
         });
     }
 }
+// intialState value
 var count =0;
 
 function checkTurn(){
@@ -39,6 +41,7 @@ function turn(event){
     }
 }
 
+// check for winning 
 function checkForWin(){
     if ($("#1").hasClass('o') && $("#2").hasClass('o') && $("#3").hasClass('o') || $("#4").hasClass('o') && $("#5").hasClass('o') && $("#6").hasClass('o') || $("#7").hasClass('o') && $("#8").hasClass('o') && $("#9").hasClass('o') || $("#1").hasClass('o') && $("#4").hasClass('o') && $("#7").hasClass('o') || $("#2").hasClass('o') && $("#5").hasClass('o') && $("#8").hasClass('o') || $("#3").hasClass('o') && $("#6").hasClass('o') && $("#9").hasClass('o') || $("#1").hasClass('o') && $("#5").hasClass('o') && $("#9").hasClass('o') || $("#3").hasClass('o') && $("#5").hasClass('o') && $("#7").hasClass('o')){
         alert("O win the Game.");
